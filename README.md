@@ -1,4 +1,5 @@
 # vuetils - Utils function for Vue
+[![Build Status](https://travis-ci.org/Slashgear/vuetils.svg?branch=master)](https://travis-ci.org/Slashgear/vuetils)
 
 Collection of utils for VueJS apps.
 
