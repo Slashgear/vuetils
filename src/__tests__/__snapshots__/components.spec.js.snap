@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`bemModifiers should be define as prototype function 1`] = `
+<div class="block block--visible">
+  <h1 class="block__element"></h1>
+</div>
+`;
