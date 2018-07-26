@@ -1,4 +1,4 @@
-# Utils on methods
+# Vue methods
 
 Vue instance methods utils
 

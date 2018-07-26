@@ -1,8 +1,8 @@
-## withBeforeAfter()
+## withBeforeAfter
 
 Returns `Object` with enhance methods with before and after handler.
 
-- **Returns:** `{[attribute: string]: any}`
+- **Returns:** `{...enhancedMethods: Function }`
 
 - **Example:**
 
