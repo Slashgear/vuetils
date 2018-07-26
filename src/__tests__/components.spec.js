@@ -30,7 +30,7 @@ describe("bemModifiers", () => {
     ]);
   });
 
-  it("should be define as prototype function", () => {
+  it("should be defined as prototype function", () => {
     const wrapper = shallowMount(
       {
         name: "DumbComponent",

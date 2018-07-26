@@ -1,5 +1,5 @@
 # Vue components
 
-Creating components could be verbose sometimes. Those are usefull method for dealing with meta patterns on component creation.
+Creating components can sometimes be verbose. Here are some useful methods to handle meta patterns when creating components.
 
 !!!include(docs/api/methods/bemModifiers.md)!!!

@@ -1,8 +1,8 @@
 ## bemModifiers
 
-Returns `Array` with class generator for vue with [BEM Semantic](http://getbem.com/introduction/)
+Returns `Array` with class generator for vue with [BEM Semantics](http://getbem.com/introduction/)
 
-- **Returns:** `[ bockOrElementDefiniton, { ...modifiers: Boolean }]`
+- **Returns:** `[ bockOrElementDefiniton: String, { ...modifiers: Boolean }]`
 
 - **Example:**
 
