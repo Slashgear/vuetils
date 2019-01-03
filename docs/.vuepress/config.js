@@ -12,6 +12,7 @@ module.exports = {
             '/',
             '/install/',
             '/api/methods/',
+            '/api/components/',
         ]
     },
     markdown: {
