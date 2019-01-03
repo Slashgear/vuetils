@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>withBeforeAfter | Vuetils</title>
+    <meta name="description" content="Utils lib for Vue App">
+    
+    
+    <link rel="preload" href="/vuetils/assets/css/0.styles.1edb1086.css" as="style"><link rel="preload" href="/vuetils/assets/js/app.25265c69.js" as="script"><link rel="preload" href="/vuetils/assets/js/7.5b5add5f.js" as="script"><link rel="prefetch" href="/vuetils/assets/js/3.beb75ec9.js"><link rel="prefetch" href="/vuetils/assets/js/2.5092f1c4.js"><link rel="prefetch" href="/vuetils/assets/js/4.72171a52.js"><link rel="prefetch" href="/vuetils/assets/js/5.ab165ca3.js"><link rel="prefetch" href="/vuetils/assets/js/6.11d17e16.js"><link rel="prefetch" href="/vuetils/assets/js/8.e7dbbfdf.js">
+    <link rel="stylesheet" href="/vuetils/assets/css/0.styles.1edb1086.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div><a href="/vuetils/" class="home-link router-link-active"><!----><span class="site-name">
+      Vuetils
+    </span></a><div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""><!----></div><nav class="nav-links can-hide"><div class="nav-item"><a href="/vuetils/" class="nav-link">Home</a></div><div class="nav-item"><a href="/vuetils/install/" class="nav-link">Install</a></div><!----></nav></div></header><div class="sidebar-mask"></div><div class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/vuetils/" class="nav-link">Home</a></div><div class="nav-item"><a href="/vuetils/install/" class="nav-link">Install</a></div><!----></nav><ul class="sidebar-links"><li><a href="/vuetils/" class="sidebar-link">Home</a></li><li><a href="/vuetils/install/" class="sidebar-link">Install Vuetils</a></li><li><a href="/vuetils/api/methods/" class="sidebar-link">Vue methods</a></li><li><a href="/vuetils/api/components/" class="sidebar-link">Vue components</a></li></ul></div><div class="page"><div class="content"><h2 id="withbeforeafter"><a href="#withbeforeafter" aria-hidden="true" class="header-anchor">#</a> withBeforeAfter</h2><p>Returns <code>Object</code> with enhance methods with before and after handler.</p><ul><li><p><strong>Returns:</strong><code>{...enhancedMethods: Function }</code></p></li><li><p><strong>Example:</strong></p></li></ul><div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">import</span> <span class="token punctuation">{</span> withBeforeAfter <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'vuetils'</span><span class="token punctuation">;</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+  name<span class="token punctuation">:</span> <span class="token string">&quot;DumbComponent&quot;</span><span class="token punctuation">,</span>
+  methods<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    <span class="token operator">...</span><span class="token function">withBeforeAfter</span><span class="token punctuation">(</span>
+      <span class="token punctuation">{</span>
+        <span class="token function">hookedMethod</span><span class="token punctuation">(</span>parameters<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+          <span class="token keyword">return</span> <span class="token function">asyncFunction</span><span class="token punctuation">(</span>parameters<span class="token punctuation">,</span> <span class="token string">&quot;pending&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span>
+        onBeforeEach<span class="token punctuation">:</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token function">asyncFunction</span><span class="token punctuation">(</span><span class="token string">&quot;before&quot;</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+        onAfterEach<span class="token punctuation">:</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token function">asyncFunction</span><span class="token punctuation">(</span><span class="token string">&quot;after&quot;</span><span class="token punctuation">)</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token function">notHookedMethod</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">return</span> <span class="token function">asyncFunction</span><span class="token punctuation">(</span><span class="token string">&quot;pending&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div></div><div class="page-edit"><!----><!----></div><!----></div></div></div>
+    <script src="/vuetils/assets/js/7.5b5add5f.js" defer></script><script src="/vuetils/assets/js/app.25265c69.js" defer></script>
+  </body>
+</html>
