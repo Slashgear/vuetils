@@ -1,6 +1,12 @@
 language: node_js
 cache: yarn
 node_js:
-  - "10"
-  - "9"
-  - "8"
+- '10'
+deploy:
+  provider: npm
+  email: antoine395.caron@gmail.com
+  api_key:
+    secure: Kl95g97JRTJ++H+25D/NYwpBNbyRfn9sIzV+yTgI87qn8LcBEF/etiYmhcGgNK3CihPrJ7i55zd+DJQzlKEXBmESvuyZ6dNSvbQI6P35xeuCNYKiEOWnp315StZr2PlP4TMuyiGz4AEoPUfSkKiYgskDKEka5Z5Ijtvnl6L23NuZRauPmd/ilJ04i/E1egBzprOpFQzU/lsCifWIfFTA7dnTSo32qd1LEUoNv+TB+Bz32Phco+sAjU1mRhnREs3LGdM+XR7cb9K2CNoBhNrO6s19/xDytgOUxivCQUYZAbd8A10vGCycmhNHpJuGnRALdgGfqfQ/Xpnqh/MLJcjAYl0T7A3N7SYciKz52DR1yHXgp6/46lFYMow3KIoVj7Man8WKE4Nx0/Ve/iUpNgmaNOLYr31rogqVGKQvqudotiO2kTGeVaUNbGSRLZjFc04nNcMtD3DjKrmWiDj6EVpLcaDm45B9v5EAr6mDOxOORszZDyYXIckMgxrDQz30VwQV8/eAAK/8uQTu9nntkfr1UGoK/LJrwGoKOeRX5O+Zfb3JcxS3cAqH55sU6gqSHeQYywqrWtiHyf1auApFx1k+FsN/E0lvJMavIjhMveK/1v3Kbu48olM8X0VUlL6t09XG/QMHI32kx/3qK6YFJqg34emS2Dx4xeIFMyHBJdB2OnI=
+  on:
+    tags: true
+    repo: Slashgear/vuetils
