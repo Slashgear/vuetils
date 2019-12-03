@@ -1,5 +1,5 @@
 # vuetils - Utils function for Vue
-[![Build Status](https://travis-ci.org/Slashgear/vuetils.svg?branch=master)](https://travis-ci.org/Slashgear/vuetils)
+[![Build Status](https://travis-ci.org/Slashgear/vuetils.svg?branch=master)](https://travis-ci.org/Slashgear/vuetils) [![Greenkeeper badge](https://badges.greenkeeper.io/Slashgear/vuetils.svg)](https://greenkeeper.io/)
 
 Collection of utils for VueJS apps.
 
