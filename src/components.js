@@ -1,7 +1,5 @@
 const toKebabCase = string =>
-  string
-    .replace(/([a-z])([A-Z])/g, "$1-$2")
-    .toLowerCase();
+  string.replace(/([a-z])([A-Z])/g, "$1-$2").toLowerCase();
 
 export const bemModifiers = (blockOrElementName, modifiers = {}) => {
   return [

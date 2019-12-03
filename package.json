@@ -27,7 +27,7 @@
     "postversion": "git push && git push --tags"
   },
   "dependencies": {
-    "vue": "^2.5.16"
+    "vue": "^2.6.10"
   },
   "homepage": "https://slashgear.github.io/vuetils/",
   "devDependencies": {
@@ -38,9 +38,14 @@
     "@vue/eslint-config-prettier": "^6.0.0",
     "@vue/test-utils": "^1.0.0-beta.20",
     "babel-core": "7.0.0-bridge.0",
+    "babel-eslint": "^10.0.3",
     "babel-jest": "^24.9.0",
+    "core-js": "^3.4.7",
+    "eslint": "^6.7.2",
+    "eslint-plugin-prettier": "^3.1.1",
+    "eslint-plugin-vue": "^6.0.1",
     "markdown-it-include": "^1.0.0",
-    "vue-template-compiler": "^2.5.16",
-    "vuepress": "^1.2.0"
+    "vue-template-compiler": "2.6.10",
+    "vuepress": "1.2.0"
   }
 }
