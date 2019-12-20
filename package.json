@@ -27,7 +27,7 @@
     "postversion": "git push && git push --tags"
   },
   "dependencies": {
-    "vue": "^2.6.10"
+    "vue": "^2.6.11"
   },
   "homepage": "https://slashgear.github.io/vuetils/",
   "devDependencies": {
@@ -45,7 +45,7 @@
     "eslint-plugin-prettier": "^3.1.1",
     "eslint-plugin-vue": "^6.0.1",
     "markdown-it-include": "^1.0.0",
-    "vue-template-compiler": "2.6.10",
+    "vue-template-compiler": "2.6.11",
     "vuepress": "1.2.0"
   }
 }
